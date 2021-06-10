@@ -30,7 +30,7 @@ print("alphabet_str[:3]: ",alphabet_str[:3])
 print("alphabet_str[:-1]: ",alphabet_str[:-1])
 print("String stepsize:")
 print("alphabet_str[::2]: ",alphabet_str[::2])
-print("alphabet_str[::2]: ",alphabet_str[::-1])
+print("alphabet_str[::-1]: ",alphabet_str[::-1])
 
 print("\n")
 print("String Concatenation!")

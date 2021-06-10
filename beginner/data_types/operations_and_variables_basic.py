@@ -8,6 +8,7 @@
 # Booleans: bool        True, False
 # (control + '/' for comments)
 
+import math
 
 # MATHEMATICS OPERATIONS
 print("\n")
@@ -18,6 +19,16 @@ print("Multiply: 7 * 4 =",7 * 4)
 print("Division: 7 / 4 =",7 / 4)
 print("Modulo: 7 % 4 =",7 % 4)
 print("Power: 2 ** 3 =",2 ** 3)
+print("Sqrtt 4: 4 ** 0.5 = ", 4 ** 0.5)
+print("Sqrt 4: sqrt(4) = ", math.sqrt(4) )
+print(" 1==1 ", (1 == 1) )
+print(" 1>2 ", 1 > 2 )
+print(" 1<2 ", 1 < 2 )
+print(" 1<2<3 ", 1 < 2 < 3 )
+print(" 1<2 and 2<3 ", 1 < 2 and 2 < 3 )
+print(" 'h' != 'h' ", 'h' != 'h')
+print(" 1<2 or 2>3 ", 1<2 or 2>3 )
+print(" not 100>0 ", not 100>0 )
 
 # ASSIGNING VARIABLES
 print("\n")
