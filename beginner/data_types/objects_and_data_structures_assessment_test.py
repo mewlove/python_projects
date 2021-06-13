@@ -61,11 +61,12 @@ q8b = [0]*3
 print(q8a)
 print(q8b)
 
-#q9 Reassign 'hello' in this nested list to say 'goodbye' instead:
-list3 = [1,2,[3,4,'hello']]
-q9 = list3
-q9[2][2] = 'goodbye'
-print(q9)
+########## Commented due to bad typing
+# #q9 Reassign 'hello' in this nested list to say 'goodbye' instead:
+# list3 = [1,2,[3,4,'hello']]
+# q9 = list3
+# q9[2][2] = 'goodbye'
+# print(q9)
 
 #q10 Sort the list below:
 list4 = [5,3,4,6,1]
@@ -88,9 +89,10 @@ d = {'k1':[{'nest_key':['this is deep',['hello']]}]}
 q11c = d['k1'][0]["nest_key"][1][0]
 print(q11c)
 
-d = {'k1':[1,2,{'k2':['this is tricky',{'tough':[1,2,['hello']]}]}]}
-q11d = d['k1'][2]['k2'][1]['tough'][2][0]
-print(q11d)
+################# Commented due to bad typing
+# d = {'k1':[1,2,{'k2':['this is tricky',{'tough':[1,2,['hello']]}]}]}
+# q11d = d['k1'][2]['k2'][1]['tough'][2][0]
+# print(q11d)
 
 
 ## Tuples
@@ -136,16 +138,18 @@ print(a15b == (3 <= 2))
 print(a15c == (3 == 2.0))
 print(a15d == (3.0 == 3))
 print(a15e == (4**0.5 != 2))
-#q16 Final Question: What is the boolean output of the cell block below?
-# two nested lists
-l_one = [1,2,[3,4]]
-l_two = [1,2,{'k1':4}]
 
-# True or False?
-#l_one[2][0] >= l_two[2]['k1']
-test_q16 = l_one[2][0] >= l_two[2]['k1']
-q16 = False
-print(q16 == test_q16)
+##### Question 16 commented as it uses bad typing
+# #q16 Final Question: What is the boolean output of the cell block below?
+# # two nested lists
+# l_one = [1,2,[3,4]]
+# l_two = [1,2,{'k1':4}]
+
+# # True or False?
+# #l_one[2][0] >= l_two[2]['k1']
+# test_q16 = l_one[2][0] >= l_two[2]['k1']
+# q16 = False
+# print(q16 == test_q16)
 
 #END TEST
 
