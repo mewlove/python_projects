@@ -1,0 +1,14 @@
+How I thought the test went:
+Misunderstood the rules.
+Tried testing the game, and it was difficult to test the 3rd matching condition, as probability of matching is too low.
+Had to use larger number of decks.
+
+What I would have done differently given more time:
+I would add the game functions into another class object.
+I would also add another loop for each game, such that the game can be replayed.
+I would correct the code for the rules. Instead of dealing one card each to player, then compare them, I would store a "previous" card for the sake of comparison. 
+
+Suggestions on how to make the simulation more realistic:
+Read the SNAP rules online, and understand that players may call SNAP!!! at the same time in real life, and when this happens, the original snap game will add both cards into a pile
+and if another consecutive occurs again, player gets entire pile of cards.
+

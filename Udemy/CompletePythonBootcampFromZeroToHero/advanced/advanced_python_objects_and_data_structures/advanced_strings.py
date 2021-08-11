@@ -1,6 +1,6 @@
 # (control + '/' for comments)
 
-s = 'hello world'
+s = 'hello world. world'
 
 print("The String:")
 print(s)
@@ -11,11 +11,11 @@ print(s.capitalize())
 print()
 
 print("Count:")
-print(s.count('o'))
+print(s.count('or'))
 print()
 
 print("Find:")
-print(s.find('o'))
+print(s.find('.'))
 print()
 
 print("Center:")

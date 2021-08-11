@@ -1,0 +1,17 @@
+Description of the game Snap
+
+Simulate a game of "Snap!" between 2 computer players using N decks of playing cards. Each card deck is a standard deck of 52 cards with 4 suits(Diamonds, Clubs, Hearts, Spades). The cards are shuffled and then played one card at a time from the top of the common pile of cards. When 2 matching cards are played consecutively, a player is chosen at random and declared the winner of that run, i.e. the first player to shout 'SNAP!'. The winner of that run takes ownership of all the cards that were played in that run. The game continues until the common pile of cards is exhausted. Any cards played without ending in a 'Snap!' condition are discarded. The player with the most number of cards at the end wins. If both players have the same number of cards, then the simulation ends in a draw.
+
+There are 3 possible 'Snap!' matching conditions for each simulation run:
+
+1. Value of the cards match.
+
+2. Suit of the cards match.
+
+3. Both the value and suit of the cards match.
+
+Your program should take in 2 command line arguments:
+
+1. The number of card decks to use, i.e. N.
+
+2. Which of the 3 matching conditions above to use.

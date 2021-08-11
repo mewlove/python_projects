@@ -1,0 +1,9 @@
+1. Open the snap.exe
+2. Input the number of decks (e.g 4)
+3. Decide which matching conditions to use. 
+	- If matching by value, input 0
+	- If matching by suit, input 1
+	- If matching by both value and suit, input 2
+4. Decide if you want to autoplay or not.
+	- Auto play plays everything in one go
+	- If not, game will pause every round

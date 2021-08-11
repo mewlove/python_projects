@@ -1,0 +1,44 @@
+This is a trivial contour algorithm using Python, and OpenCV libraries.
+
+I started off researching into libraries which can be used to open files in jpeg compression.
+I have chosen the more popular choice OpenCV library.
+
+I started off researching on contouring techniques.
+After some research, I figured that many techniques involve edge detection, with the steps of image grayscale, smoothing/noise reduction,
+finding the edge, and eliminating or selecting potential edges.
+
+With this understanding, I took a basic approach to the above.
+Firstly, in order to obtain a comparable value between each pixel, 
+I turned the image into grayscale by substituting the RGB values of each pixel with the average of the three.
+This way, each pixel could be compared with each other using just one value and either be darker, same, or lighter than its neighbours.
+
+Secondly, in order to not use too crisp an image (shading may become an edge), I decided to first smooth the original image by averaging with a 3x3 grid. 
+This could be made much better with a larger grid (such as 5x5) but since I am trying a trivial approach, 3x3 would be enough for now.
+
+Next, in order to determine if a pixel is an edge, I will calculate the difference in color (gradient) between two pixels, itself vs neighbouring pixel. 
+This is to determine if the contrast/difference in color is large enough to be an edge. 
+Contrast/Difference could be calculated in 2 directions - vertical and horizontal (will be omitting diagonal calculations).
+To calculate vertical difference, I save the difference in color for itself and the pixel below it. (How much darker or lighter it is compared to its bottom neighbour)
+For horizontal difference, I save the difference in color between itself and the pixel to the right of it. (How much darker or lighter it is compared to its right neighbour)
+To illustrate the full picture of contrast of color to its neighbouring pixels, 
+I've added the horizontal difference and vertical difference values together to obtain the values of combined contrast.
+Now that I have the values of combined difference/contrast, I want to specify a value on what contrast will be enough to consider that pixel as an edge.
+I call this the threshold.
+Everything above the threshold (larger difference) I will set as the edge, and color it white.
+Everything below the threshold (smaller difference) I will set it as the background and set it black.
+
+Now that I have the edges found, will apply them to the image to get the contours of all objects in the image.
+
+Of course, the above is a trivial edge detection algorithm which is actually not powerful enough to be used to find which is the human.
+I understand that there are other more powerful edge detection algorithms, such as Canny, Sobel, Prewitt.
+I also understand that I need feature extraction algorithm such as HOG(Histograms of Oriented Gradients), to extract the human out of the image,
+but I have not been able to understand the algorithm enough to use it yet. 
+
+So assuming I am able to use HOG to detect the human and box them out, I could crop the human out, 
+and use an edge detection algorithm for the human.
+With the edges found, I can then contour the human on the original image.
+
+
+
+
+

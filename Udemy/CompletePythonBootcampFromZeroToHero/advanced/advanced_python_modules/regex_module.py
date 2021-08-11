@@ -53,6 +53,7 @@ Additional Syntax:
 
 text = "The agent's phone number is 408-555-1234. Call soon! Call fast!"
 phone = re.search(r'\d{3}-\d{3}-\d{4}',text)
+print("TEST")
 print(phone)
 
 phone_pattern = re.compile(r'(\d{3})-(\d{3})-(\d{4})')
